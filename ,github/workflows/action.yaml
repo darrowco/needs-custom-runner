@@ -1,0 +1,9 @@
+name: must run on custom runner
+on: push
+jobs:
+  init:
+    runs-on: self-hosted
+    steps:
+      - run: echo 'hello world'
+      - run: echo $HOSTNAME
+      
